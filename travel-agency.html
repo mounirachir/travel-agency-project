@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel Agency</title>
+    <!-- Bootstrap CSS Link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding-top: 56px;
+      }
+
+      .navbar-brand {
+        font-weight: bold;
+      }
+
+      .jumbotron {
+        background-image: url("your-hero-image.jpg");
+        background-size: cover;
+        color: black;
+        text-align: center;
+        padding: 120px 0;
+      }
+
+      .card {
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+      }
+
+      #tours {
+        background-color: #f8f9fa;
+        padding: 50px 0;
+      }
+
+      .accordion-item {
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .accordion-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 20px;
+      }
+
+      .accordion-body {
+        background-color: #fff;
+        padding: 15px;
+        border-top: 1px solid #ddd;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="https://marketplace.canva.com/EAFvvrEdW20/1/0/1600w/canva-blue-and-yellow-illustrative-travel-agency-logo-TWAjs1N3SXo.jpg"
+          width="100"
+      /></a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destinations">Destinations</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron">
+      <h1>Explore the World with Us</h1>
+      <p>
+        Discover breathtaking destinations and create unforgettable memories.
+      </p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Book Now</a>
+    </div>
+
+    <!-- Destinations Section -->
+    <div class="container mt-5">
+      <h2 id="destinations">Popular Destinations</h2>
+      <div class="row">
+        <!-- Bootstrap Cards for Destinations -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://image.cnbcfm.com/api/v1/image/107108131-1661279269174-gettyimages-831412090-20170731-tana9023.jpeg?v=1661279373"
+              class="card-img-top"
+              alt="Destination 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Destination 1</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis ducimus eveniet libero recusandae nobis unde sint
+                asperiores culpa molestiae possimus rerum magnam architecto
+                maiores vitae, mollitia ad accusamus consequatur cumque
+                voluptatum, quod odio. Sequi esse eius corrupti reiciendis eum
+                ratione, magnam adipisci a, aut, explicabo cupiditate eaque
+                libero animi at.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwZGVzdGluYXRpb258ZW58MHx8MHx8fDA%3D"
+              class="card-img-top"
+              alt="Destination 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Destination 2</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis ducimus eveniet libero recusandae nobis unde sint
+                asperiores culpa molestiae possimus rerum magnam architecto
+                maiores vitae, mollitia ad accusamus consequatur cumque
+                voluptatum, quod odio. Sequi esse eius corrupti reiciendis eum
+                ratione, magnam adipisci a, aut, explicabo cupiditate eaque
+                libero animi at.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjaN0Gg73U2TFddtY47JXhgXr_4ENW648aUDBbZ5j&s"
+              class="card-img-top"
+              alt="Destination 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Destination 3</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis ducimus eveniet libero recusandae nobis unde sint
+                asperiores culpa molestiae possimus rerum magnam architecto
+                maiores vitae, mollitia ad accusamus consequatur cumque
+                voluptatum, quod odio. Sequi esse eius corrupti reiciendis eum
+                ratione, magnam adipisci a, aut, explicabo cupiditate eaque
+                libero animi at.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tours Section -->
+    <section id="tours" class="mt-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Explore Our Tours</h2>
+        <div class="accordion-item">
+          <div id="tour1">
+            <input
+              type="checkbox"
+              id="collapseTour1"
+              class="collapse-checkbox"
+            />
+            <label class="accordion-button" for="collapseTour1"
+              >Tour Package 1</label
+            >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                odit aut voluptates magni ab, sit, sed eligendi obcaecati hic
+                sequi modi. Explicabo similique enim, odio optio ipsum deleniti
+                perferendis dolorum.
+              </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div id="tour2">
+            <input
+              type="checkbox"
+              id="collapseTour2"
+              class="collapse-checkbox"
+            />
+            <label class="accordion-button" for="collapseTour2"
+              >Tour Package 2</label
+            >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, error nihil? Tempora non aliquid, expedita magni saepe
+                rerum ea omnis, pariatur esse excepturi voluptas, quod quibusdam
+                iste quas nam harum!
+              </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div id="tour3">
+            <input
+              type="checkbox"
+              id="collapseTour3"
+              class="collapse-checkbox"
+            />
+            <label class="accordion-button" for="collapseTour3"
+              >Tour Package 3</label
+            >
+            <div class="accordion-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                ducimus, molestias tempora voluptas excepturi laudantium neque
+                recusandae modi alias veritatis repellat quisquam eligendi?
+                Corrupti blanditiis facilis dignissimos illum. Mollitia,
+                adipisci.*
+              </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form Section -->
+    <div class="container mt-5">
+      <h2 id="contact">Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Your Email"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center py-3">
+      <p>
+        &copy; 2024 My Travel Agency | Follow us on
+        <a href="#">Instagram</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
