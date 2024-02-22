@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 56px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-image: url("https://travelhero.app/wp-content/uploads/2021/05/Travelhero.png");
+  background-size: cover;
+  color: black;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+#tours {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.accordion-item {
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.accordion-body {
+  background-color: #fff;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
